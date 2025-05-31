@@ -1,0 +1,8 @@
+.env
+.env/
+last_chance/
+__pycache__/
+.vscode/
+# Ignore Python cache files
+*.pyc 
+LICENSE
