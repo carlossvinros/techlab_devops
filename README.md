@@ -30,7 +30,7 @@ O sistema é implementado em Python e segue um pipeline de três etapas principa
 ## 📂 Estrutura do Diretório
 
 ```text
-rateio_custos_ia/
+techlab_devops/
 ├── .env                # Arquivo para variáveis de ambiente (NÃO FAZER COMMIT SE CONTIVER SEGREDOS)
 ├── .gitignore          # Especifica arquivos ignorados pelo Git
 ├── README.md           # Este arquivo
@@ -52,6 +52,7 @@ rateio_custos_ia/
     ├── data_handler.py     # Funções para carregar dados (Etapa 1) e consolidar/calcular (Etapa 3)
     ├── agent_mapper.py     # Lógica para interagir com o LLM (LiteLLM/Groq) e obter o mapeamento (Etapa 2)
     └── report_generator.py # Função para gerar o arquivo Excel final (parte da Etapa 3)
+```
 
 ## 🛠️ Tecnologias Utilizadas
 
