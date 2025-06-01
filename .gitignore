@@ -6,3 +6,5 @@ __pycache__/
 .gitignore 
 *.pyc 
 LICENSE
+README.md
+test_lite_llm.py 
