@@ -1,0 +1,7 @@
+pandas
+openpyxl
+litellm
+langchain-core
+pydantic
+groq
+dotenv #caso dê erro, python-dotenv
