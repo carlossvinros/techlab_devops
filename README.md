@@ -28,9 +28,12 @@ O sistema é implementado em Python e segue um pipeline de três etapas principa
 
 
 ## 📂 Estrutura do Diretório
-techlab_devops/
+
+```text
+rateio_custos_ia/
+├── .env                # Arquivo para variáveis de ambiente (NÃO FAZER COMMIT SE CONTIVER SEGREDOS)
 ├── .gitignore          # Especifica arquivos ignorados pelo Git
-├── README.md           
+├── README.md           # Este arquivo
 ├── requirements.txt    # Dependências Python do projeto
 ├── main.py             # Script principal para executar o pipeline
 │
@@ -42,13 +45,13 @@ techlab_devops/
 │   │   ├── google_workspace.xlsx
 │   │   └── unimed.xlsx
 │   └── output/         # Onde o relatório final .xlsx será gerado
-│       └── (Relatorio_Rateio_Custos.xlsx)
+│       └── (Relatorio_Rateio_Custos.xlsx) 
 │
 └── src/
-├── init.py
-├── data_handler.py     # Funções para carregar dados e consolidar/calcular
-├── agent_mapper.py     # Lógica para interagir com o LLM e obter o mapeamento 
-└── report_generator.py # Função para gerar o arquivo Excel final 
+    ├── __init__.py
+    ├── data_handler.py     # Funções para carregar dados (Etapa 1) e consolidar/calcular (Etapa 3)
+    ├── agent_mapper.py     # Lógica para interagir com o LLM (LiteLLM/Groq) e obter o mapeamento (Etapa 2)
+    └── report_generator.py # Função para gerar o arquivo Excel final (parte da Etapa 3)
 
 ## 🛠️ Tecnologias Utilizadas
 
